@@ -13,7 +13,7 @@ class DetailContactTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = person?.fullName
+        navigationItem.title = person?.fullName
     }
     
     // MARK: - Table view data source
@@ -34,9 +34,9 @@ class DetailContactTableViewController: UITableViewController {
             
             cell.textLabel?.text = "номер телефона"
             cell.detailTextLabel?.text = person?.phoneNumber
-            cell.layer.borderWidth = 20
+            cell.layer.borderWidth = 10
             cell.layer.borderColor = UIColor.systemGroupedBackground.cgColor
-            cell.layer.cornerRadius = 30
+            cell.layer.cornerRadius = 20
             cell.clipsToBounds = true
             
             return cell
@@ -45,9 +45,9 @@ class DetailContactTableViewController: UITableViewController {
             
             cell.textLabel?.text = "почта"
             cell.detailTextLabel?.text = person?.email
-            cell.layer.borderWidth = 20
+            cell.layer.borderWidth = 10
             cell.layer.borderColor = UIColor.systemGroupedBackground.cgColor
-            cell.layer.cornerRadius = 30
+            cell.layer.cornerRadius = 20
             cell.clipsToBounds = true
             
             return cell
@@ -57,9 +57,9 @@ class DetailContactTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row != 0{
-            return 120
+            return 100
         }
-        return 190
+        return 170
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -9,17 +9,23 @@ import UIKit
 
 class MainContactsTableViewController: UITableViewController {
     
-    let persons: [Person] = Person.getPersons()
+    var persons: [Person] = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = editButtonItem
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let viewController = segue.destination as? DetailContactTableViewController
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         viewController?.person = persons[indexPath.row]
+        
+        let barViewControllers = segue.destination as? UITabBarController
+        let secondContactsTableVC = barViewControllers?.viewControllers?[1] as? SecondContactsTableViewController
+        secondContactsTableVC?.persons = persons
     }
+    
 
     // MARK: - Table view data source
 
@@ -34,6 +40,13 @@ class MainContactsTableViewController: UITableViewController {
         cell.textLabel?.text = person.fullName
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            persons.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 
 }
