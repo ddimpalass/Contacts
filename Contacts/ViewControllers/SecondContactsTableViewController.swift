@@ -9,16 +9,11 @@ import UIKit
 
 class SecondContactsTableViewController: UITableViewController {
     
-    var persons: [Person] = Person.getPersons()
-
+    var persons: [Person] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
 
     // MARK: - Table view data source

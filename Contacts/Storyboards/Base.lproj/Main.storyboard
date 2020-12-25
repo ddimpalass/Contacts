@@ -73,7 +73,7 @@
         <!--Контакты-->
         <scene sceneID="wIa-iv-NrJ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vqj-GZ-jum" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vqj-GZ-jum" customClass="TapBarViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Контакты" largeTitleDisplayMode="always" id="oz7-ZP-nrM"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bg7-t8-c8L">

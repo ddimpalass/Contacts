@@ -21,11 +21,11 @@ extension Person {
         
         var personArray: [Person] = []
 
-        for index in 0..<dataManager.firstNameArray.count{
-            personArray.append(Person(firstName: dataManager.firstNameArrayShuffled[index],
-                                      lastName: dataManager.secondNameArrayShuffled[index],
-                                      phoneNumber: dataManager.phoneNumberArrayShuffled[index],
-                                      email: dataManager.emailArrayShuffled[index]))
+        for index in 0..<DataManager.shared.firstNameArray.count{
+            personArray.append(Person(firstName: DataManager.shared.firstNameArrayShuffled[index],
+                                      lastName: DataManager.shared.secondNameArrayShuffled[index],
+                                      phoneNumber: DataManager.shared.phoneNumberArrayShuffled[index],
+                                      email: DataManager.shared.emailArrayShuffled[index]))
         }
         return personArray
     }

@@ -20,6 +20,7 @@
 		1843D8EF2591CC7D00EBF910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843D8ED2591CC7D00EBF910 /* LaunchScreen.storyboard */; };
 		1843D8F82591CD7F00EBF910 /* MainContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843D8F72591CD7F00EBF910 /* MainContactsTableViewController.swift */; };
 		1843D9032591D36D00EBF910 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843D9022591D36D00EBF910 /* Person.swift */; };
+		187A34C22595C3A7003D92C1 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A34C12595C3A7003D92C1 /* TapBarViewController.swift */; };
 		18CBE90A25921A3000800654 /* DetailContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE90925921A3000800654 /* DetailContactTableViewController.swift */; };
 		18CBE90D25921A7D00800654 /* SecondContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE90C25921A7D00800654 /* SecondContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		1843D8F02591CC7D00EBF910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843D8F72591CD7F00EBF910 /* MainContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsTableViewController.swift; sourceTree = "<group>"; };
 		1843D9022591D36D00EBF910 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		187A34C12595C3A7003D92C1 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		18CBE90925921A3000800654 /* DetailContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactTableViewController.swift; sourceTree = "<group>"; };
 		18CBE90C25921A7D00800654 /* SecondContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 		18CBE9102592348300800654 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				187A34C12595C3A7003D92C1 /* TapBarViewController.swift */,
 				1843D8F72591CD7F00EBF910 /* MainContactsTableViewController.swift */,
 				18CBE90C25921A7D00800654 /* SecondContactsTableViewController.swift */,
 				1838A7E825931AF20073C665 /* SecondCells */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1843D9032591D36D00EBF910 /* Person.swift in Sources */,
+				187A34C22595C3A7003D92C1 /* TapBarViewController.swift in Sources */,
 				1843D8E32591CC7C00EBF910 /* AppDelegate.swift in Sources */,
 				1843D8E52591CC7C00EBF910 /* SceneDelegate.swift in Sources */,
 				1838A7DF259316D50073C665 /* DataManager.swift in Sources */,

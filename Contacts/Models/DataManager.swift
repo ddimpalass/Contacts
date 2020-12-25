@@ -5,6 +5,9 @@
 //  Created by Apple on 23.12.2020.
 //
 class DataManager {
+    
+    static let shared = DataManager()
+    
     let firstNameArray = ["Петя",
                           "Вася",
                           "Лиза",
@@ -59,5 +62,4 @@ class DataManager {
     }
 }
 
-let dataManager: DataManager = DataManager()
 

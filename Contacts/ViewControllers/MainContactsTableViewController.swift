@@ -9,7 +9,7 @@ import UIKit
 
 class MainContactsTableViewController: UITableViewController {
     
-    var persons: [Person] = Person.getPersons()
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +20,6 @@ class MainContactsTableViewController: UITableViewController {
         let viewController = segue.destination as? DetailContactTableViewController
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         viewController?.person = persons[indexPath.row]
-        
-        let barViewControllers = segue.destination as? UITabBarController
-        let secondContactsTableVC = barViewControllers?.viewControllers?[1] as? SecondContactsTableViewController
-        secondContactsTableVC?.persons = persons
     }
     
 
